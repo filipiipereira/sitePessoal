@@ -1,0 +1,347 @@
+/* CSS geral - Inicio*/
+html{
+    height: 100%;
+}
+body, main, section, footer{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    padding: 20px;
+}
+/* CSS geral - Fim*/
+
+/* CSS Barra - Inicio */
+.topo{
+    background-color: lightgrey;
+    height: 30px;
+    display: flex;
+}
+.circulo{
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    border-radius: 100px;
+}
+.barra{
+    background-color: white;
+    height: 10px;
+    width: 93%;
+    margin: 10px;
+    border-radius: 10px;
+}
+/* CSS Cabeçalho - Inicio */
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu a{
+    text-decoration: none;
+    color: black;    
+    font-weight: 600;
+}
+.menu li{
+    list-style: none;
+    margin-left: 30px;
+}
+.header h1{
+    font-size: 120%;
+    font-weight: 600;
+    background-color: lightgrey;
+    padding: 5px 15px;
+}
+
+
+/* CSS Cabeçalho - Fim */
+
+/* CSS Cabeçalho - Inicio */
+
+#menuToggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:650px){
+    .header{
+        background-color: lightgrey;
+        position: fixed;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        position: fixed;
+        height: 0%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-content: center;
+        flex-wrap: wrap;
+        background: rgba(0,0,0,0.6);
+        padding: 0px;
+    }
+    .menu li{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    .menu a{
+        display: block;
+        color: white !important;
+        text-align: center;
+        font-size: 30px;
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        color: white;
+        z-index: 15;
+    }
+    .menu-icon i{
+        font-size: 1.7rem;
+    }
+    #menuToggle:checked ~ label i:nth-child(2){
+        display:block;
+    }
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:first-child{
+        display: block;
+    }
+    #menuToggle:checked ~ ul{
+        height: 100%;
+        display: flex;
+    }
+    #menuToggle:not(checked) ~ ul{
+        display: none;
+    }
+    main{
+        margin-top: 20px;
+    }
+}
+
+/* CSS Cabeçalho - Fim */
+
+/* CSS Perfil - Inicio */
+
+.titulo{
+    font-size: 100%;
+    font-weight: 600;
+    border-bottom: solid 1px gray;
+}
+.perfil{
+    overflow: auto;
+    padding: 20px 10px;
+}
+.perfil img{
+    max-width: 160px;
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px lightgray;
+}
+.perfil article{
+    float: left;
+}
+.perfil h2{
+    color: deepskyblue;
+    font-size: 70%;
+    font-weight: 600;
+}
+.perfil p{
+    font-size: 70%;
+    margin: 0px;
+}
+.perfil h3{
+    font-size: 70%;
+    font-weight: 600;
+    display: inline;
+}
+.perfil > div{
+    margin: 0;
+}
+
+.perfil .subtitulo{
+    display: inline;
+}
+.perfil .logos{
+    margin: 10px;
+}
+.perfil svg{
+    margin-right: 10px;
+}
+/* CSS Perfil - Fim */
+
+/* CSS Repositorios - Inicio */
+
+.repositorios{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+.repositorios > a{
+    flex: 1 1 350px;
+    text-decoration: none;
+}
+a :hover{
+    border: solid 1px black;
+    border-radius: 5px; 
+}
+.card-title{
+    font-size: 70%;
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+    pointer-events: none;
+}
+.card-text{
+    font-size: 70%;
+    padding: 5px;
+    text-align: justify;
+    background-color: lightgray ;
+    pointer-events: none;
+}
+.card .svg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.svg > div{
+    display:flex;
+    margin: 0 auto;
+}
+.svg > div > svg{
+    margin-right: 10px;
+}
+
+/* CSS Repositorios - Fim */
+
+/* CSS Sugerido - Inicio */
+
+.conteudo_sugerido{
+    padding: 20px 10px;
+}
+
+#carouselExampleIndicators{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* CSS Sugerido - Fim */
+
+/* CSS Colegas - Inicio */
+
+.colegas{
+    
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.colega{
+    padding: 10px;
+    margin: 0 auto;
+}
+.colega img{
+    max-width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px lightgray;
+    margin: 0 auto 10px;
+}
+
+.colega h2{
+    text-align: center;
+    color:deepskyblue;
+    font-size: 70%;
+    font-weight: 600;
+}
+/* CSS Colegas - Fim */
+
+/* CSS footer - Inicio */
+
+.footer{
+    height:30px;
+    background-color: lightgray;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+}
+.footer p{
+    padding-top: 5px;
+}
+
+/* CSS footer - Fim */
+
+/* CSS Repo - Inicio */
+.repo{
+    padding: 20px 10px;
+
+}
+.repo h2{
+    color: deepskyblue;
+    font-size: 70%;
+    font-weight: 600;
+}
+.repo p{
+    font-size: 70%;
+    margin-bottom: 10px;
+}
+
+.repo ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.repo li{
+    font-size: 60%;
+    list-style: none;
+    background-color:deepskyblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.repo > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 200px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* CSS Repo - Fim */
+
