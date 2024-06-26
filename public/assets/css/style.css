@@ -163,16 +163,14 @@ main{
     border-radius: 10px;
     border: solid 1px lightgray;
 }
-.perfil article{
-    float: left;
-}
+
 .perfil h2{
     color: deepskyblue;
     font-size: 70%;
     font-weight: 600;
 }
 .perfil p{
-    font-size: 70%;
+    font-size: 80%;
     margin: 0px;
 }
 .perfil h3{
