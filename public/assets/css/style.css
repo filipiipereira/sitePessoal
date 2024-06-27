@@ -262,14 +262,15 @@ a :hover{
 
 /* CSS Colegas - Inicio */
 
-.colegas{
-    
+.colegas{  
     padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 85%;
+    max-width: 70%;
+    justify-content: space-between;
     margin: 0 auto;
+    text-align: center;
 }
 
 .colega{

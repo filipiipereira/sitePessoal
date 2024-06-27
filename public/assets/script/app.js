@@ -6,6 +6,10 @@ function carregaDadosRepos() {
     return fetch('https://api.github.com/users/filipiipereira/repos')
         .then(response => response.json());
 }
+function carregaDadosColegas() {
+    return fetch('/colegas')
+        .then(response => response.json());
+}
 function mostraDadosGit() {
     carregaDadosGit()
         .then(dados => {
@@ -43,6 +47,26 @@ function criaCardsRepos(){
             }
         })
 }
+function mostraColegas(){
+    carregaDadosColegas()
+    .then(colegas => {
+        let section = document.getElementById('colegas');
+        let template = document.getElementById('templateColega');
+
+        section.innerHTML = ''; 
+
+        for (let i = 0; i < colegas.length; i++) {
+            let colega = colegas[i];
+            let clone = template.cloneNode(true);
+            clone.style.display = 'flex';
+            clone.querySelector('#linkColega').href = colega.url_perfil;
+            clone.querySelector('#nomeColega').innerHTML = colega.nome;
+            clone.querySelector('#fotoColega').src = colega.url_imagem;
+            section.appendChild(clone);
+        }
+    })
+}
 
 mostraDadosGit();
+mostraColegas();
 

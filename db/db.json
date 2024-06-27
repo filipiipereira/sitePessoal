@@ -1,5 +1,5 @@
 {
-    "carrosel": [
+    "conteudo": [
         {
             "id": 1,
             "titulo": "Viagem de Verão",
@@ -35,6 +35,28 @@
             "url_imagem": "https://example.com/retiro-yoga.jpg",
             "url_conteudo": "https://example.com/retiro-yoga-carrossel"
         }
+    ],
+
+    "colegas": [
+        {
+            "id": "1",
+            "url_imagem": "https://avatars.githubusercontent.com/u/164202874?v=4",
+            "nome": "Sofia Grossi Vieira Santos",
+            "url_perfil": "https://github.com/Sofia-0812"
+        },
+        {
+            "id": "2",
+            "url_imagem": "https://avatars.githubusercontent.com/u/103463092?v=4",
+            "nome": "João Victor Maia",
+            "url_perfil": "https://github.com/JoaoMaia77"
+        },
+        {
+            "id": "3",
+            "url_imagem": "https://avatars.githubusercontent.com/u/164101684?v=4",
+            "nome": "Paula Nogueira",
+            "url_perfil": "https://github.com/PaulaNogueiraC"
+        }
+        
     ]
     
 }
