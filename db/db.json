@@ -1,39 +1,39 @@
 {
-    "conteudo": [
+    "conteudos": [
         {
             "id": 1,
-            "titulo": "Viagem de Verão",
-            "descricao": "Explore nossa incrível viagem de verão pelas praias paradisíacas do Caribe.",
-            "url_imagem": "https://example.com/viagem-verao.jpg",
-            "url_conteudo": "https://example.com/viagem-verao-carrossel"
+            "titulo": "Como BAIXAR THUMBNAIL de um vídeo do YOUTUBE em 30 segundos",
+            "descricao": "Como baixar thumbnail",
+            "url_imagem": "https://i.ytimg.com/an_webp/sbiThyJV_6g/mqdefault_6s.webp?du=3000&sqp=CKjr8rMG&rs=AOn4CLCjLppFjXLTbzQMvmvfNiRzmUcvvA",
+            "url_conteudo": "https://www.youtube.com/watch?v=sbiThyJV_6g"
         },
         {
             "id": 2,
-            "titulo": "Exposição de Arte Moderna",
-            "descricao": "Veja as obras mais impactantes da exposição de arte moderna deste ano.",
-            "url_imagem": "https://example.com/exposicao-arte.jpg",
-            "url_conteudo": "https://example.com/exposicao-arte-carrossel"
+            "titulo": "Como Fazer Thumbnails de Sucesso (Segredos Revelados)",
+            "descricao": "Thumbnails de sucesso",
+            "url_imagem": "https://i.ytimg.com/an_webp/_7mJDIFYe0o/mqdefault_6s.webp?du=3000&sqp=CKb18rMG&rs=AOn4CLCCnL4cpmL5tv-QY94WwnCoH0nikA",
+            "url_conteudo": "https://www.youtube.com/watch?v=kOAJ3Ltqrrw"
         },
         {
             "id": 3,
-            "titulo": "Coleção de Moda Primavera/Verão",
-            "descricao": "Descubra as últimas tendências da moda primavera/verão em nossa coleção exclusiva.",
-            "url_imagem": "https://example.com/moda-primavera-verao.jpg",
-            "url_conteudo": "https://example.com/moda-primavera-verao-carrossel"
+            "titulo": "Entendendo GIT | (não é um tutorial!)",
+            "descricao": "Não é um tutorial",
+            "url_imagem": "https://i.ytimg.com/an_webp/6OokP-NE49k/mqdefault_6s.webp?du=3000&sqp=CKCM87MG&rs=AOn4CLAvWvndf3IWGKoipOZcFRoVNDv3gQ",
+            "url_conteudo": "https://www.youtube.com/watch?v=6Czd1Yetaac"
         },
         {
             "id": 4,
-            "titulo": "Festival de Música Indie",
-            "descricao": "Reviva os melhores momentos do festival de música indie deste ano com nossos destaques.",
-            "url_imagem": "https://example.com/festival-indie.jpg",
-            "url_conteudo": "https://example.com/festival-indie-carrossel"
+            "titulo": "VAMOS FALAR de R$ 40.000,00 como Software Engineer",
+            "descricao": "Software engineer",
+            "url_imagem": "https://i.ytimg.com/an_webp/yPmItjiMY4U/mqdefault_6s.webp?du=3000&sqp=CLyR87MG&rs=AOn4CLCbW5uw0Ioh5EFlAf1NU-hPewzjLQ",
+            "url_conteudo": "https://www.youtube.com/watch?v=yPmItjiMY4U"
         },
         {
             "id": 5,
-            "titulo": "Retiro de Yoga",
-            "descricao": "Inspire-se com imagens relaxantes de nosso retiro de yoga em meio à natureza.",
-            "url_imagem": "https://example.com/retiro-yoga.jpg",
-            "url_conteudo": "https://example.com/retiro-yoga-carrossel"
+            "titulo": "C# Vale a Pena em 2024 – Trocando Ideia Sincera",
+            "descricao": "C#, vale sim",
+            "url_imagem": "https://i.ytimg.com/an_webp/ZuKy0P7DFMk/mqdefault_6s.webp?du=3000&sqp=CLL98rMG&rs=AOn4CLCHrKqaH5N4OtUSnzoYNSz2qQh1PA",
+            "url_conteudo": "https://www.youtube.com/watch?v=ZuKy0P7DFMk"
         }
     ],
 

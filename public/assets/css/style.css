@@ -251,12 +251,14 @@ a :hover{
 
 .conteudo_sugerido{
     padding: 20px 10px;
+    margin: 0 auto;
 }
 
 #carouselExampleIndicators{
     width: 50%;
     margin: 0 auto;
 }
+
 
 /* CSS Sugerido - Fim */
 

@@ -10,6 +10,10 @@ function carregaDadosColegas() {
     return fetch('/colegas')
         .then(response => response.json());
 }
+function carregaDadosConteudos() {
+    return fetch('/conteudos')
+        .then(response => response.json());
+}
 function mostraDadosGit() {
     carregaDadosGit()
         .then(dados => {
@@ -66,7 +70,27 @@ function mostraColegas(){
         }
     })
 }
+function mostraConteudos(){
+    carregaDadosConteudos()
+    .then(conteudos => {
+        let section = document.getElementById('carrousel');
+        let template = document.getElementById('templateConteudo');
+
+        section.innerHTML = ''; 
+
+        for (let i = 0; i < conteudos.length; i++) {
+            let conteudo = conteudos[i];
+            let clone = template.cloneNode(true);
+            clone.style.display = 'flex';
+            clone.querySelector('#imagemConteudo').src = conteudo.url_imagem;
+            clone.querySelector('#nomeConteudo').innerHTML = conteudo.titulo;
+            clone.querySelector('#descricaoConteudo').innerHTML = conteudo.descricao;
+            section.appendChild(clone);
+        }
+    })
+}
 
 mostraDadosGit();
 mostraColegas();
+mostraConteudos();
 
