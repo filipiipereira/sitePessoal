@@ -170,7 +170,7 @@ main{
     font-weight: 600;
 }
 .perfil p{
-    font-size: 80%;
+    font-size: 70%;
     margin: 0px;
 }
 .perfil h3{
@@ -201,9 +201,15 @@ main{
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-between;  
+    
 }
 .repositorios > a{
-    flex: 1 1 350px;
+    max-width: 300px;
+    flex: 1 1 200px;
+    text-decoration: none;
+}
+.card{
+    max-width: 300px;
     text-decoration: none;
 }
 a :hover{

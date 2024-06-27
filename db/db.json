@@ -1,1 +1,40 @@
-{}
+{
+    "carrosel": [
+        {
+            "id": 1,
+            "titulo": "Viagem de Verão",
+            "descricao": "Explore nossa incrível viagem de verão pelas praias paradisíacas do Caribe.",
+            "url_imagem": "https://example.com/viagem-verao.jpg",
+            "url_conteudo": "https://example.com/viagem-verao-carrossel"
+        },
+        {
+            "id": 2,
+            "titulo": "Exposição de Arte Moderna",
+            "descricao": "Veja as obras mais impactantes da exposição de arte moderna deste ano.",
+            "url_imagem": "https://example.com/exposicao-arte.jpg",
+            "url_conteudo": "https://example.com/exposicao-arte-carrossel"
+        },
+        {
+            "id": 3,
+            "titulo": "Coleção de Moda Primavera/Verão",
+            "descricao": "Descubra as últimas tendências da moda primavera/verão em nossa coleção exclusiva.",
+            "url_imagem": "https://example.com/moda-primavera-verao.jpg",
+            "url_conteudo": "https://example.com/moda-primavera-verao-carrossel"
+        },
+        {
+            "id": 4,
+            "titulo": "Festival de Música Indie",
+            "descricao": "Reviva os melhores momentos do festival de música indie deste ano com nossos destaques.",
+            "url_imagem": "https://example.com/festival-indie.jpg",
+            "url_conteudo": "https://example.com/festival-indie-carrossel"
+        },
+        {
+            "id": 5,
+            "titulo": "Retiro de Yoga",
+            "descricao": "Inspire-se com imagens relaxantes de nosso retiro de yoga em meio à natureza.",
+            "url_imagem": "https://example.com/retiro-yoga.jpg",
+            "url_conteudo": "https://example.com/retiro-yoga-carrossel"
+        }
+    ]
+    
+}

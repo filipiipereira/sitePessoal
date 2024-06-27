@@ -25,10 +25,10 @@
         <h1>Filipi Pereira</h1>
         <nav>
             <input type="checkbox" id="menuToggle">
-                <label for="menuToggle" class="menu-icon">
-                    <i class="bi bi-list"></i>
-                    <i class="bi bi-x-circle"></i>
-                </label>    
+            <label for="menuToggle" class="menu-icon">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x-circle"></i>
+            </label>
             <ul class="menu">
                 <li><a href="a">SEÇÃO 1</a></li>
                 <li><a href="a">SEÇÃO 2</a></li>
@@ -42,18 +42,18 @@
         <section class="perfil">
 
             <article>
-                <img src="assets/img/eu.JPEG" alt="">
+                <img id="foto" alt="">
 
-                <h2 id = "nome"></h2>
+                <h2 id="nome"></h2>
                 <p id="bio"></p>
                 <div>
                     <h3>Location:</h3>
                     <p id="localizacao" class="subtitulo"></p>
                 </div>
                 <h3>Site:</h3>
-                <p class="subtitulo">https://github.com/</p>
+                <p id="site" class="subtitulo"></p>
                 <div class="logos">
-                    <a href="https://facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    <a id="" href="https://facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
@@ -73,106 +73,36 @@
             </article>
 
         </section>
-        <h1 class="titulo">Repósitorios (3)</h1>
-        <section class="repositorios">
-            <a href="repo.html">
+        <h1 id="numero" class="titulo"></h1>
+        <section id="repositorios" class="repositorios">
+            <div id="templateCard" style="display: none">
+                <a id="linkRepo">
 
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h2 class="card-title bg-secondary">Repositorio 1</h2>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Labore nostrum
-                            officiis
-                            reiciendis officia consequatur eius, incidunt molestiae obcaecati fugit optio vero?
-                            Natus
-                            eos
-                            harum,
-                            minus atque nesciunt ab dolorum delectus.</p>
-                        <div class="svg">
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <p>0</p>
-                            </div>
-                            <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                </svg>
-                                <p>0</p>
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h2 id="tituloRepo" class="card-title bg-secondary"></h2>
+                            <p id="descricaoRepo" class="card-text"></p>
+                            <div class="svg">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <p id="numeroEstrelas"></p>
+                                </div>
+                                <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    <p id="numeroSeguidores"></p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
-                </div>
-
-            </a>
-            <a href="repo.html">
-
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h2 class="card-title bg-secondary">Repositorio 2</h2>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Labore nostrum
-                            officiis
-                            reiciendis officia consequatur eius, incidunt molestiae obcaecati fugit optio vero?
-                            Natus
-                            eos
-                            harum,
-                            minus atque nesciunt ab dolorum delectus.</p>
-                        <div class="svg">
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <p>0</p>
-                            </div>
-                            <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                </svg>
-                                <p>0</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-            <a href="repo.html">
-
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h2 class="card-title bg-secondary">Repositorio 3</h2>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Labore nostrum
-                            officiis
-                            reiciendis officia consequatur eius, incidunt molestiae obcaecati fugit optio vero?
-                            Natus
-                            eos
-                            harum,
-                            minus atque nesciunt ab dolorum delectus.</p>
-                        <div class="svg">
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <p>0</p>
-                            </div>
-                            <div> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                </svg>
-                                <p>0</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-
+                </a>
             </div>
         </section>
         <h1 class="titulo">Conteúdo sugerido</h1>
